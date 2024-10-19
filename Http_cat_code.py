@@ -26,9 +26,10 @@ def get_http_cat_image(status_code):
     return response.url if response.status_code == 200 else None
 
 def show_cat_http_details():
-    st.title("HTTP Cat Status Code")
 
-   
+    st.markdown("<h1 style='text-align: center;'>HTTP Cat Status Code</h1>", unsafe_allow_html=True)
+
+    st.markdown("<div style='margin-top: 28px;'></div>", unsafe_allow_html=True)
     status_code = st.text_input("Enter an HTTP Status Code (e.g., 200, 404, 500):")
 
     if status_code:

@@ -22,9 +22,11 @@ def get_crypto_data(crypto):
 
 
 def choose_famous_crypto():
-    st.title("Binance Famous Cryptocurrencies Info")
-    selected_crypto = st.selectbox("**Select a cryptocurrency**", [""] + famous_cryptos, index=0)
+    st.markdown("<h1 style='text-align: center;'>Cryptocurrencies Info</h1>", unsafe_allow_html=True)
 
+    st.markdown("<div style='margin-top: 28px;'></div>", unsafe_allow_html=True)
+    selected_crypto = st.selectbox("**Select a cryptocurrency**", [""] + famous_cryptos, index=0)
+   
     if selected_crypto != "":
         crypto_data = get_crypto_data(selected_crypto)
 
