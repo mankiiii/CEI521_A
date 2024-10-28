@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 # Base URL for HTTP Cat API
-BASE_URL = "https://http.cat/"
+BASE_URL = "https://f5q5mlvfj2.execute-api.eu-north-1.amazonaws.com/http-cat-image"
 
 HTTP_STATUS_CODES = {
     200: "OK",
@@ -22,8 +22,10 @@ HTTP_STATUS_CODES = {
 
 def get_http_cat_image(status_code):
     """Fetch the cat image from a given HTTP status code."""
-    response = requests.get(f"{BASE_URL}{status_code}")
-    return response.url if response.status_code == 200 else None
+    response = requests.get(f"{BASE_URL}?status_code={status_code}")
+    if response.status_code == 200:
+        return response.json().get('image_url')  # Get image_url from JSON response
+    return None 
 
 def show_cat_http_details():
 
