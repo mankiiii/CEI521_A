@@ -30,20 +30,6 @@ def show_cat_http_details():
     st.markdown("<h1 style='text-align: center;'>HTTP Cat Status Code</h1>", unsafe_allow_html=True)
 
     st.markdown("<div style='margin-top: 28px;'></div>", unsafe_allow_html=True)
-
-    st.markdown("""
-    <style>
-    /* Target all input elements */
-    input {
-        border: 2px solid #000000; /* Black border */
-        padding: 8px;
-        border-radius: 5px;
-        background-color: #f0f0f0; /* Light gray background */
-        color: #000000; /* Text color */
-        font-size: 16px;
-    }
-    </style>
-    """, unsafe_allow_html=True)
     status_code = st.text_input("Enter an HTTP Status Code (e.g., 200, 404, 500):")
 
     if status_code:
