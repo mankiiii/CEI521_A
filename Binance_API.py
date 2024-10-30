@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-# Binance API URL for 24hr price statistics
+# API URL for 24hr price statistics
 API_URL = "https://api.coincap.io/v2/assets"
 
 
@@ -39,7 +39,7 @@ def choose_famous_crypto():
         data = crypto_data['data']
         st.write(f"**Crypto**: {data['name']} ({data['symbol']})")
         st.write(f"**Rank**: {float(data['rank'])}")
-        st.write(f"**Price Change (24h)**: {float(data['changePercent24Hr'])}%")
-        st.write(f"**Price Usd**: ${float(data['priceUsd'])}")  
-        st.write(f"**Volume (24h)**: {float(data['volumeUsd24Hr'])}")
-        st.write(f"**Market Cap**: ${float(data['marketCapUsd'])}")
+        st.write(f"**Price Change (24h)**: {float(data['changePercent24Hr']):.2f}%")  
+        st.write(f"**Price Usd**: ${float(data['priceUsd']):,.2f}")
+        st.write(f"**Volume (24h)**: ${float(data['volumeUsd24Hr']):,.2f}") 
+        st.write(f"**Market Cap Usd**: ${float(data['marketCapUsd']):,.2f}") 
