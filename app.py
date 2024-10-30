@@ -35,4 +35,5 @@ with col6:
 
 
 st.markdown("<h3 style='text-align: center;'>Report</h3>",unsafe_allow_html=True)
+st.markdown("<p></p>",unsafe_allow_html=True)
     

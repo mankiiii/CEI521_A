@@ -22,7 +22,7 @@ def get_crypto_data(crypto):
 
 
 def choose_famous_crypto():
-    st.markdown("<h1 style='text-align: center;'>Cryptocurrencies Info</h1>", unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align: center;'>Cryptocurrencies Info</h2>", unsafe_allow_html=True)
 
     st.markdown("<div style='margin-top: 28px;'></div>", unsafe_allow_html=True)
     selected_crypto = st.selectbox("**Select a cryptocurrency**", [""] + famous_cryptos, index=0)
