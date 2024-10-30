@@ -23,7 +23,7 @@ def show_next_mcu_film():
 
    
 
-    col1, col2, col3 = st.columns([1, 2, 1])
+    col1, col2, col3 = st.columns([1.32, 2, 1])
 
     
     with col2:
