@@ -23,12 +23,12 @@ def show_next_mcu_film():
 
     col1, col2, col3 = st.columns([1, 2, 1])
 
-    with col2:
-        if st.button("Fetch Next MCU Production", key="fetch_mcu_button"):
-            st.session_state.button_pressed = not st.session_state.button_pressed 
-            if st.session_state.button_pressed:
-                next_mcu = get_next_mcu_production()
-                st.session_state.next_mcu = next_mcu
+
+    if st.button("Fetch Next MCU Production", key="fetch_mcu_button"):
+        st.session_state.button_pressed = not st.session_state.button_pressed 
+        if st.session_state.button_pressed:
+            next_mcu = get_next_mcu_production()
+            st.session_state.next_mcu = next_mcu
  
     
     if st.session_state.button_pressed:
