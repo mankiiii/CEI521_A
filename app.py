@@ -20,6 +20,10 @@ body {
     background-color: #242424; /* Set background color for the header */
 }
 
+[data-testid="stTextInput"]{
+        color: #242424; /* Text color */
+    }
+
 h2,h3 {
     color: #D4AF37; /* Main text color */
     font-size: 24px; /* Adjust size as needed */
