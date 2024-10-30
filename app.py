@@ -8,6 +8,8 @@ from quote import show_quote
 
 st.set_page_config(layout="wide")
 
+st.markdown("<h1 style='text-align: center;'>EXERCISE CEI 521</h1>",unsafe_allow_html=True)
+
 col1, col2, col3 = st.columns(3)
 
 with col1:
@@ -30,3 +32,7 @@ with col5:
 
 with col6:
      show_quote()  # Replace with another function if desired
+
+
+st.markdown("<h3 style='text-align: center;'>Report</h3>",unsafe_allow_html=True)
+    
