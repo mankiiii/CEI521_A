@@ -20,8 +20,8 @@ body {
     background-color: #242424; /* Set background color for the header */
 }
 
-[data-testid="stTextInput"]{
-        color: #242424; /* Text color */
+[data-testid="stWidgetLabel"]{
+        color: #FFFFFF; /* Text color */
     }
 
 h2,h3 {
