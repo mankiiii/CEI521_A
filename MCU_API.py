@@ -23,11 +23,11 @@ def show_next_mcu_film():
 
    
 
-    col1, col2, col3 = st.columns([1, 2, 1])
+    col1, col2, col3 = st.columns([1.32, 2, 1])
 
     
     with col2:
-        st.markdown("<div style='margin-top: 54px;'></div>", unsafe_allow_html=True)
+        st.markdown("<div style='margin-top: 42px;'></div>", unsafe_allow_html=True)
         if st.button("Fetch Next MCU Production", key="fetch_mcu_button"):
             st.session_state.button_pressed = not st.session_state.button_pressed 
             if st.session_state.button_pressed:
