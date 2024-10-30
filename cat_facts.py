@@ -15,7 +15,6 @@ def getFacts():
 def show_cat_fact():
         st.markdown("<h1 style='text-align: center;'>Cat facts of the day</h1>",unsafe_allow_html=True)
         catFacts = getFacts()
-        print(catFacts)
         if catFacts:
             st.write(catFacts['image_url'])
 

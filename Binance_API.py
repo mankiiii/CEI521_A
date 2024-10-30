@@ -29,13 +29,14 @@ def choose_famous_crypto():
    
     if selected_crypto != "":
         crypto_data = get_crypto_data(selected_crypto)
+        print(crypto_data)
 
         if "error" in crypto_data:
             st.error(crypto_data["error"])
             return
 
         st.write(f"**Crypto**: {selected_crypto}")
-        st.write(f"**Last Price**: {crypto_data['lastPrice']}")
+        st.write(f"**Last Price*s: {crypto_data['lastPrice']}")
         st.write(f"**Price Change (24h)**: {crypto_data['priceChangePercent']}%")
         st.write(f"**High Price (24h)**: {crypto_data['highPrice']}")
         st.write(f"**Low Price (24h)**: {crypto_data['lowPrice']}")
