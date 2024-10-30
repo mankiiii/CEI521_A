@@ -14,6 +14,6 @@ def show_quote():
     todays_quote = get_quote()
 
     if todays_quote:
-        st.write(todays_quote)
+        st.markdown(f'<div style="text-align: center; color: #FFFFFF;">{todays_quote}</div>',unsafe_allow_html=True)
     else:
         st.error("Error: Unable to retrieve weather information.")

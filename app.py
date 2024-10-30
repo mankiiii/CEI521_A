@@ -20,9 +20,20 @@ body {
     background-color: #242424; /* Set background color for the header */
 }
 
-h2,h1,h3 {
-    color: #4DB6AC; /* Main text color */
+h2,h3 {
+    color: #D4AF37; /* Main text color */
     font-size: 24px; /* Adjust size as needed */
+    font-weight: bold;
+    text-align: center;
+    text-shadow:
+        -1px -1px 0 #000, /* Top-left outline */
+         1px -1px 0 #000, /* Top-right outline */
+        -1px  1px 0 #000, /* Bottom-left outline */
+         1px  1px 0 #000; /* Bottom-right outline */
+}
+
+h1{
+color: #D4AF37; /* Main text color */
     font-weight: bold;
     text-align: center;
     text-shadow:
@@ -62,5 +73,5 @@ with col6:
 
 
 st.markdown("<h3 style='text-align: center;'>Report</h3>",unsafe_allow_html=True)
-st.markdown("<p style='text-align: center;'>Ο τρόπος που αποφασίσαμε να δουλέψουμε ήταν ο Χαράλαμπος να κανει τα 3 widgets που θα είχαν σχέση με τα web services και ο Ματθαίος να κάνει τα AWS Lambda Functions γιατί ήδη είχε λογαριασμό στα AWS services. <br/>Στον διαμοιρασμό interactive/non-interactive APIs δεν υπήρχε κάποια συνεννόηση ποιος θα πάρει 2 και ποιος 1.<br/> Ο Χαράλαμπος ήταν αυτός που είχε κάνει set up το αρχικο Application structure και ο Ματθαίος πρόσθεσε στο Application τα υπόλοιπα widgets και έφτιαξε το structure.</p>",unsafe_allow_html=True)
+st.markdown("<p style='text-align: center;'>Ο τρόπος που αποφασίσαμε να δουλέψουμε ήταν ο Χαράλαμπος να κανει τα 3 widgets που θα είχαν σχέση με τα web services και ο Ματθαίος να κάνει τα AWS Lambda Functions γιατί ήδη είχε λογαριασμό στα AWS services. <br/>Στον διαμοιρασμό interactive/non-interactive APIs δεν υπήρχε κάποια συνεννόηση ποιος θα πάρει 2 και ποιος 1.<br/> Ο Χαράλαμπος ήταν αυτός που είχε κάνει set up το αρχικο Application structure και ο Ματθαίος πρόσθεσε στο Application τα υπόλοιπα widgets και έφτιαξε το structure. <br/> Επίσης για καλύτερη κατανόηση ο καθένας μας εξήγησε και ανάλυσε το πως δουλεύει ο κώδικας του άλλου για να έχουμε μια πιο ολοκληρωμένη γνώση του συστήματος.</p>",unsafe_allow_html=True)
     
