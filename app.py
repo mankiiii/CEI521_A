@@ -8,6 +8,15 @@ from quote import show_quote
 
 st.set_page_config(layout="wide")
 
+page_bg_color = '''
+<style>
+body {
+    background-color: #242424;
+}
+</style>
+'''
+st.markdown(page_bg_color, unsafe_allow_html=True)
+
 st.markdown("<h1 style='text-align: center;'>EXERCISE CEI 521</h1>",unsafe_allow_html=True)
 
 col1, col2, col3 = st.columns(3)
@@ -35,5 +44,5 @@ with col6:
 
 
 st.markdown("<h3 style='text-align: center;'>Report</h3>",unsafe_allow_html=True)
-st.markdown("<p></p>",unsafe_allow_html=True)
+st.markdown("<p style='text-align: center;'>Ο τρόπος που αποφασίσαμε να δουλέψουμε ήταν ο Χαράλαμπος να κανει τα 3 widgets που θα είχαν σχέση με τα web services και ο Ματθαίος να κάνει τα AWS Lambda Functions γιατί ήδη είχε λογαριασμό στα AWS services. <br/>Στον διαμοιρασμό interactive/non-interactive APIs δεν υπήρχε κάποια συνεννόηση ποιος θα πάρει 2 και ποιος 1. Ο Χαράλαμπος ήταν αυτός που είχε κάνει set up το αρχικο Application structure και ο Ματθαίος πρόσθεσε στο Application τα υπόλοιπα widgets και έφτιαξε το structure.</p>",unsafe_allow_html=True)
     

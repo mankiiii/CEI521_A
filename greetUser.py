@@ -10,7 +10,7 @@ def greeting(nameOfUser):
     return None 
 
 def greetUser():
-    st.markdown("<h2 style='text-align: center;'>Lambda function Greeting</h2>",unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>Lambda function Greeting</h1>",unsafe_allow_html=True)
     name = st.text_input("Enter your name")
 
     if name:
