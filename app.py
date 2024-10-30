@@ -11,18 +11,22 @@ st.set_page_config(layout="wide")
 page_bg_color = '''
 <style>
 body {
-    background-color: #242424; /* Set background color for the body */
+    background-color: #242424; 
 }
 [data-testid="stAppViewContainer"] {
-    background-color: #242424; /* Set background color for the main container */
+    background-color: #242424; 
 }
 [data-testid="stHeader"] {
-    background-color: #242424; /* Set background color for the header */
+    background-color: #242424; 
 }
 
 [data-testid="stWidgetLabel"]{
-        color: #FFFFFF; /* Text color */
+        color: #FFFFFF; 
     }
+
+[id^="bui111val"]{
+    color: #FFFFFF; 
+}
 
 h2,h3 {
     color: #D4AF37; /* Main text color */
