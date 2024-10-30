@@ -16,7 +16,7 @@ def show_next_mcu_film():
     
 
 
-    st.markdown("<h1 style='text-align: center;'>Next MCU Production Countdown</h1>", unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align: center;'>Next MCU Production</h2>", unsafe_allow_html=True)
 
     if 'button_pressed' not in st.session_state:
         st.session_state.button_pressed = False

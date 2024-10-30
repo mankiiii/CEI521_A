@@ -10,7 +10,7 @@ def get_quote():
     return None 
 
 def show_quote():
-    st.markdown("<h1>Motivational Quote</h1>", unsafe_allow_html=True)
+    st.markdown("<h2>Motivational Quote</h2>", unsafe_allow_html=True)
     todays_quote = get_quote()
 
     if todays_quote:
