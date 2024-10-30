@@ -38,7 +38,7 @@ def choose_famous_crypto():
 
         data = crypto_data['data']
         st.write(f"**Crypto**: {data['name']} ({data['symbol']})")
-        st.write(f"**Rank**: {float(data['rank'])}")
+        st.write(f"**Rank**: {(data['rank'])}")
         st.write(f"**Price Change (24h)**: {float(data['changePercent24Hr']):.2f}%")  
         st.write(f"**Price Usd**: ${float(data['priceUsd']):,.2f}")
         st.write(f"**Volume (24h)**: ${float(data['volumeUsd24Hr']):,.2f}") 
