@@ -21,7 +21,20 @@ def show_next_mcu_film():
     if 'button_pressed' not in st.session_state:
         st.session_state.button_pressed = False
 
-   
+    st.markdown(
+        """
+        <style>
+        @media only screen and (max-width: 768px) {
+            .stButton button {
+                display: block;
+                margin: auto;
+                width: 100%;
+            }
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
 
     col1, col2, col3 = st.columns([1.32, 2, 1])
 
